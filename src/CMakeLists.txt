@@ -34,14 +34,14 @@ add_executable(async_lib main.cpp)
 #                   util/Util.h
 #                   util/Util.cpp )
 
-# target_include_directories(
-#                 async
-#                 PRIVATE
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/writer
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/async
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/util
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/com
-#                 ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(
+                async
+                PRIVATE
+                ${CMAKE_CURRENT_SOURCE_DIR}/writer
+                ${CMAKE_CURRENT_SOURCE_DIR}/asynchronously
+                ${CMAKE_CURRENT_SOURCE_DIR}/util
+                ${CMAKE_CURRENT_SOURCE_DIR}/com
+                ${CMAKE_CURRENT_SOURCE_DIR})
 
 
 set_target_properties(async_lib PROPERTIES OUTPUT_NAME async PUBLIC_HEADER asynchronously/async.h)
