@@ -65,3 +65,9 @@ build/src/CMakeFiles/async_lib.dir/link.txt
 build/src/CMakeFiles/async_lib.dir/main.cpp.o
 build/src/CMakeFiles/async_lib.dir/main.cpp.o.d
 build/src/CMakeFiles/async_lib.dir/progress.make
+src/CMakeLists.txt
+build/src/CMakeFiles/async.dir/compiler_depend.internal
+build/src/CMakeFiles/async.dir/asynchronously/async.cpp.o
+build/src/CMakeFiles/async.dir/asynchronously/async.cpp.o.d
+build/src/CMakeFiles/async_lib.dir/compiler_depend.internal
+.vscode/settings.json

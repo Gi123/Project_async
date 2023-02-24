@@ -1,6 +1,6 @@
 set(LIB_NAME )
 add_library(async SHARED
-                  async/async.cpp
+                  asynchronously/async.cpp
                   writer/AsyncCommandWriter.h
                   writer/AsyncCommandWriter.cpp
                   com/CommandProcessingFacade.h
