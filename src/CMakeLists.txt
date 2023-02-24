@@ -51,14 +51,3 @@ set_target_properties(async_lib PROPERTIES OUTPUT_NAME async PUBLIC_HEADER async
 find_package(Threads REQUIRED)
 target_link_libraries(async_lib PRIVATE async Threads::Threads)
 
-#BEGIN release
-install(TARGETS async_lib async)
-
-set(CPACK_GENERATOR DEB)
-
-set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
-set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
-set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
-
-include(CPack)
-#END
