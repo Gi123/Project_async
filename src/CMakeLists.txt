@@ -42,7 +42,7 @@ target_include_directories(
                 ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(async_lib main.cpp)
-set_target_properties(async_lib PROPERTIES OUTPUT_NAME async PUBLIC_HEADER async.h)
+set_target_properties(async_lib PROPERTIES OUTPUT_NAME async PUBLIC_HEADER asynchronously/async.h)
 
 # set_target_properties(async_cli PROPERTIES OUTPUT_NAME command)
 # set_target_properties(async_cli PROPERTIES OUTPUT_NAME writer)
