@@ -6,13 +6,11 @@ on:
 
 jobs:
   build:
-    permissions: write-all
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
+      - uses: actions/checkout@v3
       - run: cmake . 
+      - run: ls
       - run: cmake --build . 
 
       - name: Create Release
