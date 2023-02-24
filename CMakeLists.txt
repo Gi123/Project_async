@@ -8,8 +8,6 @@ set(THREADS_PREFER_PTHREAD_FLAG TRUE)
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
-option(WITH_TESTS FALSE CACHE)
-
 project(async VERSION ${PROJECT_VERSION})
 
 add_subdirectory(src)

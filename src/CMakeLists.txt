@@ -1,4 +1,4 @@
-set(LIB_NAME )
+set(LIB_NAME async)
 add_library(async SHARED
                   asynchronously/async.cpp
                   writer/AsyncCommandWriter.h
@@ -34,8 +34,7 @@ add_executable(async_lib main.cpp)
 #                   util/Util.h
 #                   util/Util.cpp )
 
-target_include_directories(
-                async
+include_directories(
                 PRIVATE
                 ${CMAKE_CURRENT_SOURCE_DIR}/writer
                 ${CMAKE_CURRENT_SOURCE_DIR}/asynchronously
