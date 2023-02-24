@@ -9,13 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: mkdir build
-      - run: cd build
-      - run: cmake .. 
-      - run: ls
-      - run: pwd
-      - run: cmake --build . 
-
+      - run: cmake . -DPATCH_VERSION=${{ github.run_number }}
+      - run: cmake --build .
+      - run: cmake --build . --target package
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -24,6 +20,8 @@ jobs:
         with:
           tag_name: ${{ github.run_number }}
           release_name: Release ${{ github.run_number }}
+          draft: false
+          prerelease: false
 
       - name: Upload Release Asset
         id: upload-release-asset
